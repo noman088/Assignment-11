@@ -14,15 +14,17 @@
 
 // int CheckLCM(int x, int y)
 // {
-//     int L;
-//     for (L = 2; L < (x * y);L++)
+//     int i;
+//     int till = x * y;
+//     for (i = 2; i <= till;i++)
 //      {
-//         if(x%L==0 && y%L==0)
+//         if(i%x==0 && i%y==0)
 //          break;
 //      }
-//      if(x%L==0 && y%L==0)
-//          return L;
+//      if(i%x==0 && i%y==0)
+//          return i;
 // }
+
 
 // 2. Write a function to calculate HCF of two numbers. (TSRS)
 // #include<stdio.h>
@@ -57,18 +59,16 @@
 // 3. Write a function to check whether a given number is Prime or not. (TSRS)
 // #include<stdio.h>
 // #include<conio.h>
-// int checkprime(int);
+// void checkprime(int);
 // int main()
 // {
 //     int num ;
 //     printf("Enter a number ");
 //     scanf("%d",&num);
-//     printf("%d ", chesckprime(num));
-//     printf("\n1.mean Yes \n0. means No");
-
+//     checkprime(num);
 //     return 0;
 // }
-// int checkprime(int num1)
+// void checkprime(int num1)
 // {
 //     int i;
 //     for (i = 2; i < num1;i++)
@@ -77,9 +77,9 @@
 //         break;
 //     }
 //     if(num1==i)
-//         return 1;
+//        printf("%d is prime",num1);
 //       else
-//           return 0;
+//        printf("%d is not prime",num1);
 // }
 
 // 4. Write a function to find the next prime number of a given number. (TSRS)
